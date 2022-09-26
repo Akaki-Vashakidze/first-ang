@@ -1,0 +1,11 @@
+<mat-menu #appMenu="matMenu">
+    <button mat-menu-item [mat-menu-trigger-for]="subMenu">Frontend</button>
+    <button mat-menu-item>Backend</button>
+</mat-menu>
+<button class="menu" mat-flat-button [matMenuTriggerFor]="appMenu">Menu</button>
+
+<mat-menu #subMenu="matMenu">
+    <button mat-menu-item>Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>Vue</button>
+</mat-menu>
