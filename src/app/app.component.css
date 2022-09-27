@@ -5,10 +5,33 @@ body {
   align-items: center;
 }
 
+.tripsTitle {
+    text-align: center;
+    font-size: 26px;
+    margin: 2rem;
+    margin-top: 3rem;
+}
 
-.last-trips {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
+
+/* მობილური */
+@media only screen and (max-width: 600px) {
+    .last-trips {
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+}
+
+
+/* კომპიუტერი */
+@media screen and (min-width: 600px) {
+    .last-trips {
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
 }

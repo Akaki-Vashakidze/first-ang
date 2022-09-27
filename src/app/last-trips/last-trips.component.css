@@ -2,7 +2,15 @@
 
 .trips {
     position: relative;
-    margin: 10px;
+    margin: 20px;
 }
 
+.example-card {
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+.example-card:hover {
+    transform: scale(1.05); 
+}
 
