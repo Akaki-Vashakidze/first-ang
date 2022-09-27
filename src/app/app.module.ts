@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ManuComponent } from './manu/manu.component';
 import { MaterialModule } from './material/material.module';
+import { LastTripsComponent } from './last-trips/last-trips.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ManuComponent
+    ManuComponent,
+    LastTripsComponent
   ],
   imports: [
     BrowserModule,

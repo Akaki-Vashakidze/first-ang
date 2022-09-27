@@ -1,11 +1,14 @@
 
-@media only screen and (max-width: 600px) {
-   
-  }
+body {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
 
-  /* When the browser is at least 600px and above */
-@media screen and (min-width: 600px) {
-    body {
-        background: lightblue;
-      }
-  }
+
+.last-trips {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}

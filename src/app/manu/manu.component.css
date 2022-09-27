@@ -1,12 +1,13 @@
 
 
-.menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
+  .menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 /* მობილური */
 @media only screen and (max-width: 600px) {
@@ -16,11 +17,26 @@
   }
 
   .menu-button {
+    z-index: 100;
     margin: 1rem;
+    position: fixed;
   }
 
   .img2 {
     display: none;
+  }
+
+  .toolBar {
+    display: none;
+  }
+
+
+  .bkImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -28,6 +44,15 @@
 @media screen and (min-width: 600px) {
   .menu-button {
     display: none;
+  }
+
+
+  .bkImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .menuButs {
@@ -40,8 +65,9 @@
   }
 
   .toolBar {
-    position: absolute;
+    z-index: 99;
     justify-content: space-between;
+    background: rgb(61, 62, 64);
   }
 
   .img2 {
