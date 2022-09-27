@@ -1,3 +1,51 @@
+
+
 .menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* მობილური */
+@media only screen and (max-width: 600px) {
+  .img1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-button {
     margin: 1rem;
+  }
+
+  .img2 {
+    display: none;
+  }
+}
+
+/* კომპიუტერი */
+@media screen and (min-width: 600px) {
+  .menu-button {
+    display: none;
+  }
+
+  .menuButs {
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+
+  .img1 {
+    display: none;
+  }
+
+  .toolBar {
+    position: absolute;
+    justify-content: space-between;
+  }
+
+  .img2 {
+    width: 100%;
+    height: 100%;
+  }
 }

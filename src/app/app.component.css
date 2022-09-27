@@ -1,0 +1,11 @@
+
+@media only screen and (max-width: 600px) {
+   
+  }
+
+  /* When the browser is at least 600px and above */
+@media screen and (min-width: 600px) {
+    body {
+        background: lightblue;
+      }
+  }
