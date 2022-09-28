@@ -4,16 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ManuComponent } from './manu/manu.component';
+import { MenuComponent } from './menu/menu.component';
 import { MaterialModule } from './material/material.module';
 import { LastTripsComponent } from './last-trips/last-trips.component';
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ManuComponent,
-    LastTripsComponent
+    MenuComponent,
+    LastTripsComponent,
+    RegistrationFormComponent
   ],
   imports: [
     BrowserModule,

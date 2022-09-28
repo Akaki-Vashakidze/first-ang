@@ -10,7 +10,18 @@
     transition: ease-in 0.3s;
 }
 
+
 .example-card:hover {
     transform: scale(1.05); 
 }
 
+.footer {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+.shadow {
+    box-shadow: 5px 10px #888888;
+}

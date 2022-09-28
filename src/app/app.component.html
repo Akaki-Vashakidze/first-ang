@@ -1,6 +1,18 @@
-
-<app-manu></app-manu>
-<div class="tripsTitle">Our Last Trips Albums</div>
+<app-menu></app-menu>
 <div class="last-trips">
-    <app-last-trips *ngFor="let trip of trips;" [trip] = 'trip'></app-last-trips>
+  <div>
+    <div class="tripsTitle">Our Last Trips Albums</div>
+    <div class="last-trips-cards">
+      <app-last-trips *ngFor="let trip of trips" [trip]="trip"></app-last-trips>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div class="reg-form-header">Register now!</div>
+      <div class="reg-form-div">
+         <app-registration-form></app-registration-form>
+      </div>
+    </div>
+ 
+  </div>
 </div>
