@@ -13,4 +13,8 @@ export class LastTripsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  lastTripsClick = () => {
+    console.log('gfd')
+  }
+
 }

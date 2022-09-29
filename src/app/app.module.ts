@@ -8,6 +8,8 @@ import { MenuComponent } from './menu/menu.component';
 import { MaterialModule } from './material/material.module';
 import { LastTripsComponent } from './last-trips/last-trips.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { ContactNavbarComponent } from './contact-navbar/contact-navbar.component';
+import { FullLastTripCardComponent } from './full-last-trip-card/full-last-trip-card.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { RegistrationFormComponent } from './registration-form/registration-form
     AppComponent,
     MenuComponent,
     LastTripsComponent,
-    RegistrationFormComponent
+    RegistrationFormComponent,
+    ContactNavbarComponent,
+    FullLastTripCardComponent
   ],
   imports: [
     BrowserModule,

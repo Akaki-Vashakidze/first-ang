@@ -12,6 +12,13 @@ body {
     margin-top: 3rem;
 }
 
+.last-trips-cards {
+    height: 1000px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
 .reg-form-header {
     text-align: center;
     font-size: 26px;
@@ -23,10 +30,13 @@ body {
     margin-top: 3rem;
 }
 
+.last-trips-and-Register {
+    margin-bottom: 4rem;
+}
 
 /* მობილური */
 @media only screen and (max-width: 600px) {
-    .last-trips {
+    .last-trips-and-Register {
         position: relative;
         width: 100%;
         display: grid;
@@ -38,7 +48,7 @@ body {
 
 /* კომპიუტერი */
 @media screen and (min-width: 600px) {
-    .last-trips {
+    .last-trips-and-Register {
         position: relative;
         width: 100%;
         display: grid;
