@@ -1,1 +1,15 @@
-<p>full-last-trip-card works!</p>
+<div>
+    <h1>Trip Images</h1>
+  <div class="trip-window">
+    <div class="trip-images" *ngFor="let image of images" (click)="imageZoom(image)" >
+      <img
+      class="album-image"
+        width="400px"
+        height="300px"
+        mat-card-image
+        [src]="image.link"
+        alt="/"
+      />
+    </div>
+  </div>
+</div>

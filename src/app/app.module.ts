@@ -10,6 +10,7 @@ import { LastTripsComponent } from './last-trips/last-trips.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { ContactNavbarComponent } from './contact-navbar/contact-navbar.component';
 import { FullLastTripCardComponent } from './full-last-trip-card/full-last-trip-card.component';
+import { ZoomImageComponent } from './full-last-trip-card/zoom-image/zoom-image.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FullLastTripCardComponent } from './full-last-trip-card/full-last-trip-
     LastTripsComponent,
     RegistrationFormComponent,
     ContactNavbarComponent,
-    FullLastTripCardComponent
+    FullLastTripCardComponent,
+    ZoomImageComponent,
   ],
   imports: [
     BrowserModule,

@@ -3,11 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
 }
 
 .icons {
-    margin: 1rem;
+    margin: 2rem;
     transition: ease-in 0.2s;
     cursor: pointer;
 }

@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { FullLastTripCardComponent } from '../full-last-trip-card/full-last-trip-card.component';
 import { trip } from '../trips.model';
 
 @Component({
@@ -8,13 +10,13 @@ import { trip } from '../trips.model';
 })
 export class LastTripsComponent implements OnInit {
   @Input() trip:trip;
-  constructor() { }
+  constructor(private dialogRef:MatDialog) { }
 
   ngOnInit(): void {
   }
 
   lastTripsClick = () => {
-    console.log('gfd')
+    this.dialogRef.open(FullLastTripCardComponent)
   }
 
 }

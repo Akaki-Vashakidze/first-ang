@@ -1,0 +1,42 @@
+
+   .trip-window {
+    height: 600px;
+    overflow: hidden;
+    overflow-y: scroll;
+   }
+
+   h1 {
+    text-align: center;
+   }
+
+   .trip-images {
+    cursor: pointer;
+   }
+
+/* კომპიუტერი */
+@media screen and (min-width: 600px) {
+    .trip-window {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .trip-images {
+        margin: 1rem;
+        margin-left: 2rem;
+       }
+    
+}
+
+
+/* მობილური */
+@media only screen and (max-width: 600px) {
+    .trip-window {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+    }
+    
+    .trip-images {
+        margin-bottom: 1rem;
+       }
+    
+}
