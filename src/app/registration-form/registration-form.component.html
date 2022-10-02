@@ -3,21 +3,21 @@
   <div class="form-input">
     <mat-form-field color="accent">
       <mat-label>Name:</mat-label>
-      <input matInput />
+      <input #name matInput />
     </mat-form-field>
   </div>
 
   <div class="form-input">
     <mat-form-field color="accent">
       <mat-label>Last name:</mat-label>
-      <input matInput />
+      <input #lastName matInput />
     </mat-form-field>
   </div>
 
   <div class="form-input">
     <mat-form-field color="accent">
       <mat-label>Username:</mat-label>
-      <input matInput />
+      <input #username matInput />
       <mat-hint>Min 5 characters</mat-hint>
     </mat-form-field>
   </div>
@@ -25,7 +25,7 @@
   <div class="form-input">
     <mat-form-field>
       <mat-label>Gender</mat-label>
-      <mat-select>
+      <mat-select #gender>
         <mat-option value="male">male</mat-option>
         <mat-option value="female">female</mat-option>
       </mat-select>
@@ -35,21 +35,21 @@
   <div class="form-input">
     <mat-form-field color="accent">
       <mat-label>Gmail:</mat-label>
-      <input matInput />
+      <input #gmail matInput />
     </mat-form-field>
   </div>
 
   <div class="form-input">
     <mat-form-field color="accent">
       <mat-label>Mobile number:</mat-label>
-      <input type="password" matInput />
+      <input #number type="password" matInput />
     </mat-form-field>
   </div>
 
   <div class="form-input">
     <mat-form-field color="accent">
       <mat-label>Password:</mat-label>
-      <input type="password" matInput />
+      <input #password1 type="password" matInput />
       <mat-hint>Min 7 characters</mat-hint>
     </mat-form-field>
   </div>
@@ -57,16 +57,16 @@
   <div class="form-input">
     <mat-form-field color="accent">
       <mat-label>Repeat Password:</mat-label>
-      <input type="password" matInput />
+      <input #password2 type="password" matInput />
       <mat-hint>Min 7 characters</mat-hint>
     </mat-form-field>
   </div>
 </div>
 <div class="form-buttons">
-<button mat-raised-button>Sign Up</button>
+<button (click)="signUp(name,lastName,username,gmail,number,password1,password2)" mat-raised-button>Sign Up</button>
 </div>
 <div class="login-buttons">
   <div>Already have an account?</div>
-  <button mat-raised-button>Sign In</button>
+  <button mat-raised-button (click)="signIn()">Sign In</button>
   </div>
 </div>

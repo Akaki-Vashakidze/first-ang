@@ -13,7 +13,7 @@ body {
 }
 
 .last-trips-cards {
-    height: 1000px;
+    height: 800px;
     width: 100%;
     overflow: hidden;
     overflow-y: scroll;
@@ -34,6 +34,8 @@ body {
     margin-bottom: 4rem;
 }
 
+
+
 /* მობილური */
 @media only screen and (max-width: 600px) {
     .last-trips-and-Register {
@@ -41,6 +43,9 @@ body {
         width: 100%;
         display: grid;
         grid-template-columns: 100%;
+    }
+    .form-inputs {
+        font-size: 11px;
     }
 
 }

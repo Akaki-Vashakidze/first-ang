@@ -11,10 +11,6 @@
 transform: scale(1.01);
 }
 
-.form-input {
-  margin: 1rem;
-}
-
 .form-buttons {
   display: flex;
   align-items: center;
@@ -42,6 +38,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
   }
 }
 

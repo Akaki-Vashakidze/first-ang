@@ -11,6 +11,8 @@ import { RegistrationFormComponent } from './registration-form/registration-form
 import { ContactNavbarComponent } from './contact-navbar/contact-navbar.component';
 import { FullLastTripCardComponent } from './full-last-trip-card/full-last-trip-card.component';
 import { ZoomImageComponent } from './full-last-trip-card/zoom-image/zoom-image.component';
+import { SignInComponent } from './registration-form/sign-in/sign-in.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,12 +24,14 @@ import { ZoomImageComponent } from './full-last-trip-card/zoom-image/zoom-image.
     ContactNavbarComponent,
     FullLastTripCardComponent,
     ZoomImageComponent,
+    SignInComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

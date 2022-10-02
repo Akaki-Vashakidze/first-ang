@@ -106,7 +106,14 @@ export class ItemsService {
 
   setZoomImgLink(link){
     this.zoomImgLink = link;
-    console.log(this.zoomImgLink)
   }
+
+  signIn:any = {
+    admins:[{username:'maisa',pass:'123456'},{username:'ako',pass:'123456'}],
+    users:[{username:'giorgi',pass:'123456'},{username:'ika',pass:'123456'},{username:'ana',pass:'123456'},{username:'lasha',pass:'123456'}]
+  }
+
+  loggedInAdmin:boolean = false;
+  loggedInUser:boolean = false;
 
 }

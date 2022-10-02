@@ -1,0 +1,18 @@
+<div>
+  <div class="form-input">
+    <mat-form-field color="accent">
+      <mat-label>Username::</mat-label>
+      <input matInput #username/>
+    </mat-form-field>
+  </div>
+
+  <div class="form-input">
+    <mat-form-field color="accent">
+      <mat-label>Password:</mat-label>
+      <input type="password" matInput #pass/>
+    </mat-form-field>
+  </div>
+  <div>
+  <button mat-raised-button (click)="signIn(username,pass,'Logged in as','Close')">Sign In</button>
+  </div>
+</div>
