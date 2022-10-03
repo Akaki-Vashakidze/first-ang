@@ -29,6 +29,17 @@ transform: scale(1.01);
 button{
   margin: 2rem;
 }
+.reg-form-header {
+  text-align: center;
+  font-size: 26px;
+  margin: 2rem;
+  margin-top: 3rem;
+}
+
+.reg-form-div {
+  margin-top: 3rem;
+}
+
 
 /* მობილური */
 @media only screen and (max-width: 600px) {
@@ -47,5 +58,13 @@ button{
   .form-inputs {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+
+  button {
+    transition: ease-in 0.2s;
+  }
+
+  button:hover {
+    transform: scale(1.04);
   }
 }

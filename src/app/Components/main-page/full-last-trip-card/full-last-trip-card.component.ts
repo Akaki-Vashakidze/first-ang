@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ItemsService } from '../items.service';
+import { ItemsService } from 'src/app/items.service';
 import { ZoomImageComponent } from './zoom-image/zoom-image.component';
 
 @Component({

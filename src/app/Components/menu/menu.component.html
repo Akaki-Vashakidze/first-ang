@@ -1,7 +1,7 @@
 
 <mat-menu #appMenu="matMenu">
   <button  mat-menu-item [mat-menu-trigger-for]="subMenu">Destinations</button>
-  <button  mat-menu-item>Find a trip</button>
+  <button  mat-menu-item>Reserve a trip</button>
   <button  mat-menu-item>My Page</button>
   <button  mat-menu-item>Contact Us</button>
 </mat-menu>
@@ -26,12 +26,12 @@
 
 <div class="menu shadow">
   <mat-toolbar class="toolBar">
-    <div class="menuButs">Main</div>
+    <div class="menuButs"><a routerLink="/main">Main</a></div>
     <div>
       <span [mat-menu-trigger-for]="subMenu1" class="menuButs"
-        >Destinations</span
+        ><a routerLink="/destinations">Destinations</a></span
       >
-      <span class="menuButs">Find a trip</span>
+      <span class="menuButs">Reserve a trip</span>
       <span class="menuButs">My Page</span>
       <span class="menuButs">Contact Us</span>
     </div>

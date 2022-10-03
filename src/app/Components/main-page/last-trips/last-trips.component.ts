@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { FullLastTripCardComponent } from '../full-last-trip-card/full-last-trip-card.component';
-import { trip } from '../trips.model';
+import { trip } from 'src/app/trips.model';
 
 @Component({
   selector: 'app-last-trips',

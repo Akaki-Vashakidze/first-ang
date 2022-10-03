@@ -1,0 +1,13 @@
+<div class="last-trips-and-Register">
+  <div>
+    <div>
+      <app-registration-form></app-registration-form>
+    </div>
+  </div>
+  <div>
+    <div class="tripsTitle">Our Last Trips Albums</div>
+    <div class="last-trips-cards shadow">
+      <app-last-trips *ngFor="let trip of trips" [trip]="trip"></app-last-trips>
+    </div>
+  </div>
+</div>
