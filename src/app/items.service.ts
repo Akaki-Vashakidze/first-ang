@@ -227,9 +227,9 @@ export class ItemsService {
     ],
   };
 
-  loggedInAdmin: boolean;
-  loggedInUser: boolean;
-  loggedIn: boolean;
+  loggedInAdmin: boolean = false;
+  loggedInUser: boolean = false;
+  loggedIn: boolean = false;
 
   logAdmin = () => {
     this.loggedInAdmin = true;

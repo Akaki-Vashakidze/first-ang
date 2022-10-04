@@ -1,17 +1,17 @@
 
 <mat-menu #appMenu="matMenu">
-  <button  mat-menu-item [mat-menu-trigger-for]="subMenu">Destinations</button>
+  <button  mat-menu-item><a routerLink="/main">Main</a></button>
+  <button  mat-menu-item [mat-menu-trigger-for]="subMenu"><a routerLink="/destinations">Destinations</a></button>
   <button  mat-menu-item>Reserve a trip</button>
-  <button  mat-menu-item>My Page</button>
   <button  mat-menu-item>Contact Us</button>
 </mat-menu>
 <mat-menu #subMenu="matMenu">
-  <button mat-menu-item>East Georgia</button>
-  <button mat-menu-item>West Georgia</button>
+  <button mat-menu-item><a routerLink="/destinations/east">East Georgia</a></button>
+  <button mat-menu-item><a routerLink="/destinations/west">West Georgia</a></button>
 </mat-menu>
 <mat-menu class="subMenu1" #subMenu1="matMenu">
-  <button mat-menu-item>East Georgia</button>
-  <button mat-menu-item>West Georgia</button>
+  <button mat-menu-item><a routerLink="/destinations/east">East Georgia</a></button>
+  <button mat-menu-item><a routerLink="/destinations/west">West Georgia</a></button>
 </mat-menu>
 
 <div class="bkImage">
@@ -32,7 +32,6 @@
         ><a routerLink="/destinations">Destinations</a></span
       >
       <span class="menuButs">Reserve a trip</span>
-      <span class="menuButs">My Page</span>
       <span class="menuButs">Contact Us</span>
     </div>
   </mat-toolbar>

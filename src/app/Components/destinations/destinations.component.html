@@ -1,33 +1,15 @@
 <div class="destinations-container">
   <div class="header">Destinations</div>
+  <div class="destination-search shadow">
+    <mat-form-field color="accent">
+      <mat-label>Search:</mat-label>
+      <input (keyup)="onKeyUp($event)" matInput />
+    </mat-form-field>
+  </div>
   <div class="desitinations">
-    <div *ngFor="let destination of destinations" class="destination">
-      <div class="shadow">
-        <mat-card class="example-card">
-          <mat-card-title-group>
-            <div class="margin1">
-              <mat-card-title>{{ destination.name }}</mat-card-title>
-              <mat-card-subtitle>{{ destination.side }}</mat-card-subtitle>
-              <div>
-                <div>Find the destination on Google Maps:</div>
-                <button
-                  mat-icon-button
-                  aria-label="Example icon button with a vertical three dot icon"
-                >
-                  <a [href]="destination.destination" class="googleMaps">
-                    Google Maps
-                  </a>
-                  <mat-icon>location_on</mat-icon>
-                </button>
-              </div>
-            </div>
-            <div class="image margin1">
-              <img mat-card-xl-image [src]="destination.img" />
-            </div>
-          </mat-card-title-group>
-          <mat-card-content  class="margin1"> {{ destination.description }}</mat-card-content>
-        </mat-card>
-      </div>
-    </div>
+    <app-destination-card
+      *ngFor="let destination of destinations"
+      [destination]="destination"
+    ></app-destination-card>
   </div>
 </div>

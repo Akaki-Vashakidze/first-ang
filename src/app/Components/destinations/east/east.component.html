@@ -1,1 +1,9 @@
-<p>east works!</p>
+<div class="destinations-container">
+  <div class="header">Destinations of East Georgia</div>
+  <div class="desitinations">
+    <app-destination-card
+      *ngFor="let destination of eastDestinations"
+      [destination]="destination"
+    ></app-destination-card>
+  </div>
+</div>

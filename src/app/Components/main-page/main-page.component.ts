@@ -14,6 +14,5 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.trips = this.itemsService.trips;
-    console.log(this.trips,'sss')
   }
 }

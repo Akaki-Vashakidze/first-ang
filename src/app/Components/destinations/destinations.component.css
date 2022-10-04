@@ -5,10 +5,18 @@
     flex-direction: column;
 }
 
-.destination {
+.destination-search {
     margin-top: 2rem;
-    padding: 2rem;
+    color: black;
+    background: rgb(61, 62, 64);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
 }
+
+input {
+    color: white;
+}
+
 
 .header {
     text-align: center;

@@ -18,6 +18,7 @@ import { DestinationsComponent } from './Components/destinations/destinations.co
 import { MainPageComponent } from './Components/main-page/main-page.component';
 import { EastComponent } from './Components/destinations/east/east.component';
 import { WestComponent } from './Components/destinations/west/west.component';
+import { DestinationCardComponent } from './Components/destinations/destination-card/destination-card.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { WestComponent } from './Components/destinations/west/west.component';
     MainPageComponent,
     EastComponent,
     WestComponent,
+    DestinationCardComponent,
   ],
   imports: [
     BrowserModule,
